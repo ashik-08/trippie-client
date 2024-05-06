@@ -1,9 +1,11 @@
+import NavBar from "../components/NavBar/NavBar";
+
 const MainLayout = () => {
-    return (
-        <section>
-            Hello
-        </section>
-    );
+  return (
+    <section>
+      <NavBar />
+    </section>
+  );
 };
 
 export default MainLayout;
