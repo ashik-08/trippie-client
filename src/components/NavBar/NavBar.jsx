@@ -174,7 +174,7 @@ const NavBar = () => {
                   Login
                 </Link>
                 <Link
-                  to="/login"
+                  to="/register"
                   className="hidden md:inline md:px-12 lg:px-8 xl:px-12 py-3 rounded-lg bg-primary text-white text-sm md:text-base xl:text-lg font-semibold"
                 >
                   Sign up
