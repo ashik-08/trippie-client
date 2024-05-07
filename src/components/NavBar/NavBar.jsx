@@ -1,20 +1,23 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.svg";
+import { useContext } from "react";
+import { AuthContext } from "../../Provider/AuthProvider";
+import toast from "react-hot-toast";
 
 const NavBar = () => {
-  const { user } = true;
+  const { user, logOut } = useContext(AuthContext);
 
-  //   const handleLogout = () => {
-  //     const toastId = toast.loading("Logging Out...");
-  //     logOut()
-  //       .then(() => {
-  //         toast.success("Logged Out Successfully.", { id: toastId });
-  //       })
-  //       .catch((error) => {
-  //         console.error(error);
-  //         toast.error("Something went wrong!", { id: toastId });
-  //       });
-  //   };
+  const handleLogout = () => {
+    const toastId = toast.loading("Logging Out...");
+    logOut()
+      .then(() => {
+        toast.success("Logged Out Successfully.", { id: toastId });
+      })
+      .catch((error) => {
+        console.error(error);
+        toast.error("Something went wrong!", { id: toastId });
+      });
+  };
 
   const links = (
     <>
@@ -161,7 +164,9 @@ const NavBar = () => {
                     <li>
                       <Link to="/3">333</Link>
                     </li>
-                    <li>{/* <Link onClick={handleLogout}>Logout</Link> */}</li>
+                    <li>
+                      <Link onClick={handleLogout}>Logout</Link>
+                    </li>
                   </>
                 </ul>
               </div>
