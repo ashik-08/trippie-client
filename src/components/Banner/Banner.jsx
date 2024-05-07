@@ -6,11 +6,11 @@ const Banner = () => {
       <div className="container mx-auto flex flex-col lg:flex-row justify-center lg:justify-between lg:gap-5 xl:gap-40 items-center gap-y-10">
         <div className="flex-1">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-volkhov font-bold">
-            Norem ipsum dolor sit amet consectetur
+            The ultimate tour guide to fuel your wanderlust
           </h1>
           <p className="my-8 lg:my-10">
-            Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis.
+            Trippie provies the best service and travel suggestions around the
+            world for you. Pack your bag and travel the world.
           </p>
           <Link
             to="/"
